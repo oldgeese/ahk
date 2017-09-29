@@ -421,12 +421,9 @@ scroll_down()
   if is_target()
     Send %A_ThisHotkey%
   Else
-    Input,Key, C I L1 T2,{Esc},a,f
+    Input,Key, C I L1 T2,{Esc},a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z
     If ErrorLevel = Match
     {
-      If Key = a
-        Send ^a
-      If Key = f
-        Send ^f
+      Send ^%Key%
     }
   Return
