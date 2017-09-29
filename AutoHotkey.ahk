@@ -26,4 +26,5 @@
 
 #Include  %A_ScriptDir%\vim_ime.ahk
 #Include  %A_ScriptDir%\emacs.ahk
+#Include  %A_ScriptDir%\jistous.ahk
 #Include  %A_ScriptDir%\nyquist.ahk
