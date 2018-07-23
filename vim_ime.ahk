@@ -7,6 +7,9 @@ GroupAdd Terminal, ahk_class VTWin32 ; TeraTerm
 GroupAdd Terminal, ahk_exe RLogin.exe ; RLogin
 GroupAdd TerminalVim, ahk_group Terminal
 GroupAdd TerminalVim, ahk_class Vim
+GroupAdd TerminalVim, ahk_exe Oni.exe
+GroupAdd TerminalVim, ahk_exe devenv.exe
+GroupAdd TerminalVim, ahk_exe electron.exe
 
 ; Include IME.hak
 ; http://www6.atwiki.jp/eamat/pages/17.html
@@ -22,6 +25,7 @@ Esc:: ; Just send Esc at converting.
       Send,{Esc}
     } else {
       IME_SET(0)
+      Send,{Esc}
     }
   } else {
     Send,{Esc}
